@@ -1,0 +1,98 @@
+:root {
+  --fuente-principal: "Press Start 2P", cursive;
+  --color-fuente-principal: #ffbf0b;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, #4c4c4c, #292929);
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.col {
+  min-height: 120px;
+}
+.contenedor-titulo {
+  padding: 10px 0;
+}
+.titulo {
+  font-family: var(--fuente-principal);
+  color: var(--color-fuente-principal);
+}
+.contenedor-boton-play {
+  padding: 10px 0;
+}
+.boton-play,
+.boton-reset {
+  font-family: var(--fuente-principal);
+  font-size: 16px;
+}
+.contenedor-texto-dificultad {
+  padding: 5px 0;
+}
+.texto-dificultad {
+  font-family: var(--fuente-principal);
+  color: var(--color-fuente-principal);
+}
+.botones-dificultad {
+  font-family: var(--fuente-principal);
+  font-size: 14px;
+}
+.contenedor-botones-dificultad {
+  max-width: 720px;
+}
+.contenedor-grilla-facil,
+.contenedor-grilla-medio {
+  padding: 10px 0;
+}
+
+#elemento-oculto {
+  display: none;
+}
+#grilla-oculta {
+  opacity: 0;
+  height: 0;
+  padding: 0;
+}
+#grilla-visible {
+  opacity: 1;
+  height: auto;
+  transition: opacity 1.1s linear;
+}
+
+.color-rojo {
+  background-color: red;
+  transition: background-color 0.3s linear;
+}
+.color-azul {
+  background-color: blue;
+  transition: background-color 0.3s linear;
+}
+.color-verde {
+  background-color: green;
+  transition: background-color 0.3s linear;
+}
+.color-amarillo {
+  background-color: yellow;
+  transition: background-color 0.3s linear;
+}
+.color-naranja {
+  background-color: orange;
+  transition: background-color 0.3s linear;
+}
+.color-rosa {
+  background-color: pink;
+  transition: background-color 0.3s linear;
+}
+
+.color-violeta {
+  background-color: violet;
+  transition: background-color 0.3s linear;
+}
+.color-marron {
+  background-color: brown;
+  transition: background-color 0.3s linear;
+}
+
+#color-oculto {
+  background-color: transparent;
+}
