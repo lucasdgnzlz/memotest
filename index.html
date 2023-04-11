@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <title>Memotest</title>
+  </head>
+  <body>
+    <div class="container text-center contenedor-titulo">
+      <div class="row gx-0">
+        <div class="col-md-auto"></div>
+        <div class="col-md-auto-10">
+          <div class="container-md">
+            <h1 class="titulo">Memotest</h1>
+          </div>
+
+          <div class="container-md contenedor-boton-play">
+            <button class="btn btn-warning boton-play" type="button" id="elemento-oculto">Play!</button>
+            <button class="btn btn-secondary boton-reset" type="button" id="elemento-oculto">Reset!</button>
+          </div>
+        </div>
+        <div class="col-md-auto"></div>
+      </div>
+    </div>
+
+    <div class="container text-center contenedor-texto-dificultad">
+      <div class="row gx-0">
+        <div class="col-md-auto"></div>
+        <div class="col-md-auto-10">
+          <h3 class="texto-dificultad">Elegí la dificultad!</h3>
+        </div>
+        <div class="col-md-auto"></div>
+      </div>
+    </div>
+
+    <div class="container contenedor-botones-dificultad">
+      <div class="d-grid gap-2 col-6 mx-auto container">
+        <button class="btn btn-warning botones-dificultad boton-facil" type="button">Facil</button>
+        <button class="btn btn-warning botones-dificultad boton-intermedio" type="button">Intermedio</button>
+      </div>
+    </div>
+
+    <div class="container text-center contenedor-grilla-facil" id="elemento-oculto">
+      <div class="row gx-0">
+        <div class="col-1"></div>
+
+        <div class="col">
+          <div class="row gx-0 row-cols-4">
+            <div class="col cuadro-facil border" id="color-oculto"></div>
+            <div class="col cuadro-facil border" id="color-oculto"></div>
+            <div class="col cuadro-facil border" id="color-oculto"></div>
+            <div class="col cuadro-facil border" id="color-oculto"></div>
+            <div class="col cuadro-facil border" id="color-oculto"></div>
+            <div class="col cuadro-facil border" id="color-oculto"></div>
+            <div class="col cuadro-facil border" id="color-oculto"></div>
+            <div class="col cuadro-facil border" id="color-oculto"></div>
+            <div class="col cuadro-facil border" id="color-oculto"></div>
+            <div class="col cuadro-facil border" id="color-oculto"></div>
+            <div class="col cuadro-facil border" id="color-oculto"></div>
+            <div class="col cuadro-facil border" id="color-oculto"></div>
+          </div>
+        </div>
+
+        <div class="col-1"></div>
+      </div>
+    </div>
+
+    <div class="container text-center contenedor-grilla-intermedio" id="grilla-oculta">
+      <div class="row gx-0">
+        <div class="col-1"></div>
+
+        <div class="col">
+          <div class="row gx-0 row-cols-4">
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+            <div class="col cuadro-intermedio border" id="color-oculto"></div>
+          </div>
+        </div>
+
+        <div class="col-1"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="modo-facil.js"></script>
+    <script src="modo-intermedio.js"></script>
+  </body>
+</html>
