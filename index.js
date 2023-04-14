@@ -219,19 +219,33 @@ function guardarColoresEncontrados() {
 function comprobarColoresEncontrados(e) {
   let colorCuadro = "";
 
-  coloresDificultadFacil.forEach(function (color) {
-    if (e.target.classList.contains(color)) {
-      colorCuadro = color;
+  if(dificultadElegida === "facil"){
+    coloresDificultadFacil.forEach(function (color) {
+      if (e.target.classList.contains(color)) {
+        colorCuadro = color;
+      }
+    });
+  
+    for (let i = 0; i < coloresYaEncontrados.length; i++) {
+      if (coloresYaEncontrados[i] === colorCuadro) {
+        return true;
+      }
     }
-  });
-
-  for (let i = 0; i < coloresYaEncontrados.length; i++) {
-    if (coloresYaEncontrados[i] === colorCuadro) {
-      return "Este color ya fue encontrado";
+  } else if(dificultadElegida === "intermedio"){
+    coloresDificultadIntermedio.forEach(function (color) {
+      if (e.target.classList.contains(color)) {
+        colorCuadro = color;
+      }
+    });
+  
+    for (let i = 0; i < coloresYaEncontrados.length; i++) {
+      if (coloresYaEncontrados[i] === colorCuadro) {
+        return true;
+      }
     }
   }
 
-  return "";
+  return false;
 }
 
 function comprobarEstadoJuego() {

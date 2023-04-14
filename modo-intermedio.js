@@ -25,7 +25,7 @@ function gestionarModoIntermedio() {
 $cuadrosGrillaIntermedio.forEach(function (cuadro) {
   cuadro.addEventListener("click", (e) => {
     if (juegoComenzado && cuadrosElegidos.length < 2) {
-      if (comprobarColoresEncontrados(e) === "") {
+      if (!comprobarColoresEncontrados(e)) {
         if (indicadorTurnos === 1) {
           indicadorTurnos++;
           guardarCuadroElegido(e);
