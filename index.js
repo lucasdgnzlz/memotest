@@ -193,21 +193,11 @@ function ocultarTodosLosCuadros() {
 }
 
 function comprobarCuadroElegido(e) {
-  if (e.target === cuadrosElegidos[0]) {
-    return "Es el mismo cuadro";
-  } else {
-    return "";
-  }
+  return e.target === cuadrosElegidos[0];
 }
 
 function comprobarColoresCuadros() {
-  for (let i = 0; i < cuadrosElegidos[0].classList.length; i++) {
-    if (cuadrosElegidos[0].classList[i] !== cuadrosElegidos[1].classList[i]) {
-      return "Los colores no coinciden";
-    }
-  }
-
-  return "";
+  return cuadrosElegidos[0].className === cuadrosElegidos[1].className;
 }
 
 function guardarColoresEncontrados() {
