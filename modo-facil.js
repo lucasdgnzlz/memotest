@@ -29,11 +29,11 @@ $cuadrosGrillaFacil.forEach(function (cuadro) {
           guardarCuadroElegido(e);
           mostrarCuadroElegido(e);
         } else if (indicadorTurnos === 2) {
-          if (comprobarCuadroElegido(e) === "") {
+          if (!comprobarCuadroElegido(e)) {
             guardarCuadroElegido(e);
             mostrarCuadroElegido(e);
 
-            if (comprobarColoresCuadros() === "") {
+            if (comprobarColoresCuadros()) {
               guardarColoresEncontrados();
               comprobarEstadoJuego();
               actualizarTituloJuegoTerminado();
