@@ -175,9 +175,12 @@ function mostrarCuadroElegido(e) {
 }
 
 function ocultarCuadrosElegidos() {
-  for (let i = 0; i < cuadrosElegidos.length; i++) {
-    cuadrosElegidos[i].id = "color-oculto";
-  }
+  setTimeout(function (){
+    for (let i = 0; i < cuadrosElegidos.length; i++) {
+      cuadrosElegidos[i].id = "color-oculto";
+    }
+    cuadrosElegidos = [];
+  }, 0850)
 }
 
 function ocultarTodosLosCuadros() {

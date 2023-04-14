@@ -43,11 +43,7 @@ $cuadrosGrillaIntermedio.forEach(function (cuadro) {
               indicadorTurnos = 1;
             } else {
               indicadorTurnos = 1;
-
-              setTimeout(function () {
-                ocultarCuadrosElegidos();
-                cuadrosElegidos = [];
-              }, 0850);
+              ocultarCuadrosElegidos();
             }
           } else {
             return false;
