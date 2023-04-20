@@ -4,6 +4,8 @@
   "description": "Demo del juego ''memotest''",
   "main": "index.html",
   "scripts": {
+    "empezar": "http-server",
+    "cypress-dev":"cypress open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +20,8 @@
   "homepage": "https://github.com/lucasdgnzlz/memotest#readme",
   "dependencies": {
     "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "cypress": "^12.10.0"
   }
 }
